@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		84F1EDF11E2C8B44004DE3C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EDF01E2C8B44004DE3C8 /* AppDelegate.swift */; };
-		84F1EDF31E2C8B44004DE3C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EDF21E2C8B44004DE3C8 /* ViewController.swift */; };
+		84F1EDF31E2C8B44004DE3C8 /* TRSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EDF21E2C8B44004DE3C8 /* TRSplashViewController.swift */; };
 		84F1EDF61E2C8B44004DE3C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F1EDF41E2C8B44004DE3C8 /* Main.storyboard */; };
 		84F1EDF91E2C8B44004DE3C8 /* Travelia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EDF71E2C8B44004DE3C8 /* Travelia.xcdatamodeld */; };
 		84F1EDFB1E2C8B44004DE3C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F1EDFA1E2C8B44004DE3C8 /* Assets.xcassets */; };
 		84F1EDFE1E2C8B44004DE3C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F1EDFC1E2C8B44004DE3C8 /* LaunchScreen.storyboard */; };
 		84F1EE091E2C8B44004DE3C8 /* TraveliaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EE081E2C8B44004DE3C8 /* TraveliaTests.swift */; };
 		84F1EE141E2C8B44004DE3C8 /* TraveliaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EE131E2C8B44004DE3C8 /* TraveliaUITests.swift */; };
+		84F1EE221E2C8BF7004DE3C8 /* TRSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EE211E2C8BF7004DE3C8 /* TRSignUpViewController.swift */; };
+		84F1EE261E2C9EE8004DE3C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EE251E2C9EE8004DE3C8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		84F1EDED1E2C8B44004DE3C8 /* Travelia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F1EDF01E2C8B44004DE3C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84F1EDF21E2C8B44004DE3C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84F1EDF21E2C8B44004DE3C8 /* TRSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRSplashViewController.swift; sourceTree = "<group>"; };
 		84F1EDF51E2C8B44004DE3C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84F1EDF81E2C8B44004DE3C8 /* Travelia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Travelia.xcdatamodel; sourceTree = "<group>"; };
 		84F1EDFA1E2C8B44004DE3C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		84F1EE0F1E2C8B44004DE3C8 /* TraveliaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraveliaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F1EE131E2C8B44004DE3C8 /* TraveliaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraveliaUITests.swift; sourceTree = "<group>"; };
 		84F1EE151E2C8B44004DE3C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F1EE211E2C8BF7004DE3C8 /* TRSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRSignUpViewController.swift; sourceTree = "<group>"; };
+		84F1EE251E2C9EE8004DE3C8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				84F1EDF01E2C8B44004DE3C8 /* AppDelegate.swift */,
-				84F1EDF21E2C8B44004DE3C8 /* ViewController.swift */,
-				84F1EDF41E2C8B44004DE3C8 /* Main.storyboard */,
 				84F1EDFA1E2C8B44004DE3C8 /* Assets.xcassets */,
-				84F1EDFC1E2C8B44004DE3C8 /* LaunchScreen.storyboard */,
 				84F1EDFF1E2C8B44004DE3C8 /* Info.plist */,
+				84F1EDFC1E2C8B44004DE3C8 /* LaunchScreen.storyboard */,
+				84F1EDF41E2C8B44004DE3C8 /* Main.storyboard */,
 				84F1EDF71E2C8B44004DE3C8 /* Travelia.xcdatamodeld */,
+				84F1EE211E2C8BF7004DE3C8 /* TRSignUpViewController.swift */,
+				84F1EDF21E2C8B44004DE3C8 /* TRSplashViewController.swift */,
+				84F1EE251E2C9EE8004DE3C8 /* Constants.swift */,
 			);
 			path = Travelia;
 			sourceTree = "<group>";
@@ -265,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F1EE261E2C9EE8004DE3C8 /* Constants.swift in Sources */,
+				84F1EE221E2C8BF7004DE3C8 /* TRSignUpViewController.swift in Sources */,
 				84F1EDF91E2C8B44004DE3C8 /* Travelia.xcdatamodeld in Sources */,
-				84F1EDF31E2C8B44004DE3C8 /* ViewController.swift in Sources */,
+				84F1EDF31E2C8B44004DE3C8 /* TRSplashViewController.swift in Sources */,
 				84F1EDF11E2C8B44004DE3C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
