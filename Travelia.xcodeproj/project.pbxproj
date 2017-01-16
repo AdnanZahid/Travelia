@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84F1EDF11E2C8B44004DE3C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EDF01E2C8B44004DE3C8 /* AppDelegate.swift */; };
+		84F1EDF31E2C8B44004DE3C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EDF21E2C8B44004DE3C8 /* ViewController.swift */; };
+		84F1EDF61E2C8B44004DE3C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F1EDF41E2C8B44004DE3C8 /* Main.storyboard */; };
+		84F1EDF91E2C8B44004DE3C8 /* Travelia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EDF71E2C8B44004DE3C8 /* Travelia.xcdatamodeld */; };
+		84F1EDFB1E2C8B44004DE3C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F1EDFA1E2C8B44004DE3C8 /* Assets.xcassets */; };
+		84F1EDFE1E2C8B44004DE3C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F1EDFC1E2C8B44004DE3C8 /* LaunchScreen.storyboard */; };
+		84F1EE091E2C8B44004DE3C8 /* TraveliaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EE081E2C8B44004DE3C8 /* TraveliaTests.swift */; };
+		84F1EE141E2C8B44004DE3C8 /* TraveliaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EE131E2C8B44004DE3C8 /* TraveliaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84F1EE051E2C8B44004DE3C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F1EDE51E2C8B44004DE3C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F1EDEC1E2C8B44004DE3C8;
+			remoteInfo = Travelia;
+		};
+		84F1EE101E2C8B44004DE3C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F1EDE51E2C8B44004DE3C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F1EDEC1E2C8B44004DE3C8;
+			remoteInfo = Travelia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84F1EDED1E2C8B44004DE3C8 /* Travelia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F1EDF01E2C8B44004DE3C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84F1EDF21E2C8B44004DE3C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84F1EDF51E2C8B44004DE3C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84F1EDF81E2C8B44004DE3C8 /* Travelia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Travelia.xcdatamodel; sourceTree = "<group>"; };
+		84F1EDFA1E2C8B44004DE3C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84F1EDFD1E2C8B44004DE3C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84F1EDFF1E2C8B44004DE3C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F1EE041E2C8B44004DE3C8 /* TraveliaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraveliaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F1EE081E2C8B44004DE3C8 /* TraveliaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraveliaTests.swift; sourceTree = "<group>"; };
+		84F1EE0A1E2C8B44004DE3C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F1EE0F1E2C8B44004DE3C8 /* TraveliaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraveliaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F1EE131E2C8B44004DE3C8 /* TraveliaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraveliaUITests.swift; sourceTree = "<group>"; };
+		84F1EE151E2C8B44004DE3C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F1EDEA1E2C8B44004DE3C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F1EE011E2C8B44004DE3C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F1EE0C1E2C8B44004DE3C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84F1EDE41E2C8B44004DE3C8 = {
+			isa = PBXGroup;
+			children = (
+				84F1EDEF1E2C8B44004DE3C8 /* Travelia */,
+				84F1EE071E2C8B44004DE3C8 /* TraveliaTests */,
+				84F1EE121E2C8B44004DE3C8 /* TraveliaUITests */,
+				84F1EDEE1E2C8B44004DE3C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84F1EDEE1E2C8B44004DE3C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F1EDED1E2C8B44004DE3C8 /* Travelia.app */,
+				84F1EE041E2C8B44004DE3C8 /* TraveliaTests.xctest */,
+				84F1EE0F1E2C8B44004DE3C8 /* TraveliaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F1EDEF1E2C8B44004DE3C8 /* Travelia */ = {
+			isa = PBXGroup;
+			children = (
+				84F1EDF01E2C8B44004DE3C8 /* AppDelegate.swift */,
+				84F1EDF21E2C8B44004DE3C8 /* ViewController.swift */,
+				84F1EDF41E2C8B44004DE3C8 /* Main.storyboard */,
+				84F1EDFA1E2C8B44004DE3C8 /* Assets.xcassets */,
+				84F1EDFC1E2C8B44004DE3C8 /* LaunchScreen.storyboard */,
+				84F1EDFF1E2C8B44004DE3C8 /* Info.plist */,
+				84F1EDF71E2C8B44004DE3C8 /* Travelia.xcdatamodeld */,
+			);
+			path = Travelia;
+			sourceTree = "<group>";
+		};
+		84F1EE071E2C8B44004DE3C8 /* TraveliaTests */ = {
+			isa = PBXGroup;
+			children = (
+				84F1EE081E2C8B44004DE3C8 /* TraveliaTests.swift */,
+				84F1EE0A1E2C8B44004DE3C8 /* Info.plist */,
+			);
+			path = TraveliaTests;
+			sourceTree = "<group>";
+		};
+		84F1EE121E2C8B44004DE3C8 /* TraveliaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84F1EE131E2C8B44004DE3C8 /* TraveliaUITests.swift */,
+				84F1EE151E2C8B44004DE3C8 /* Info.plist */,
+			);
+			path = TraveliaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F1EDEC1E2C8B44004DE3C8 /* Travelia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F1EE181E2C8B44004DE3C8 /* Build configuration list for PBXNativeTarget "Travelia" */;
+			buildPhases = (
+				84F1EDE91E2C8B44004DE3C8 /* Sources */,
+				84F1EDEA1E2C8B44004DE3C8 /* Frameworks */,
+				84F1EDEB1E2C8B44004DE3C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Travelia;
+			productName = Travelia;
+			productReference = 84F1EDED1E2C8B44004DE3C8 /* Travelia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84F1EE031E2C8B44004DE3C8 /* TraveliaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F1EE1B1E2C8B44004DE3C8 /* Build configuration list for PBXNativeTarget "TraveliaTests" */;
+			buildPhases = (
+				84F1EE001E2C8B44004DE3C8 /* Sources */,
+				84F1EE011E2C8B44004DE3C8 /* Frameworks */,
+				84F1EE021E2C8B44004DE3C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F1EE061E2C8B44004DE3C8 /* PBXTargetDependency */,
+			);
+			name = TraveliaTests;
+			productName = TraveliaTests;
+			productReference = 84F1EE041E2C8B44004DE3C8 /* TraveliaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84F1EE0E1E2C8B44004DE3C8 /* TraveliaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F1EE1E1E2C8B44004DE3C8 /* Build configuration list for PBXNativeTarget "TraveliaUITests" */;
+			buildPhases = (
+				84F1EE0B1E2C8B44004DE3C8 /* Sources */,
+				84F1EE0C1E2C8B44004DE3C8 /* Frameworks */,
+				84F1EE0D1E2C8B44004DE3C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F1EE111E2C8B44004DE3C8 /* PBXTargetDependency */,
+			);
+			name = TraveliaUITests;
+			productName = TraveliaUITests;
+			productReference = 84F1EE0F1E2C8B44004DE3C8 /* TraveliaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F1EDE51E2C8B44004DE3C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Adnan Zahid";
+				TargetAttributes = {
+					84F1EDEC1E2C8B44004DE3C8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Q666HR669V;
+						ProvisioningStyle = Automatic;
+					};
+					84F1EE031E2C8B44004DE3C8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Q666HR669V;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84F1EDEC1E2C8B44004DE3C8;
+					};
+					84F1EE0E1E2C8B44004DE3C8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Q666HR669V;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84F1EDEC1E2C8B44004DE3C8;
+					};
+				};
+			};
+			buildConfigurationList = 84F1EDE81E2C8B44004DE3C8 /* Build configuration list for PBXProject "Travelia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84F1EDE41E2C8B44004DE3C8;
+			productRefGroup = 84F1EDEE1E2C8B44004DE3C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F1EDEC1E2C8B44004DE3C8 /* Travelia */,
+				84F1EE031E2C8B44004DE3C8 /* TraveliaTests */,
+				84F1EE0E1E2C8B44004DE3C8 /* TraveliaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F1EDEB1E2C8B44004DE3C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F1EDFE1E2C8B44004DE3C8 /* LaunchScreen.storyboard in Resources */,
+				84F1EDFB1E2C8B44004DE3C8 /* Assets.xcassets in Resources */,
+				84F1EDF61E2C8B44004DE3C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F1EE021E2C8B44004DE3C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F1EE0D1E2C8B44004DE3C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F1EDE91E2C8B44004DE3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F1EDF91E2C8B44004DE3C8 /* Travelia.xcdatamodeld in Sources */,
+				84F1EDF31E2C8B44004DE3C8 /* ViewController.swift in Sources */,
+				84F1EDF11E2C8B44004DE3C8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F1EE001E2C8B44004DE3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F1EE091E2C8B44004DE3C8 /* TraveliaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F1EE0B1E2C8B44004DE3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F1EE141E2C8B44004DE3C8 /* TraveliaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84F1EE061E2C8B44004DE3C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F1EDEC1E2C8B44004DE3C8 /* Travelia */;
+			targetProxy = 84F1EE051E2C8B44004DE3C8 /* PBXContainerItemProxy */;
+		};
+		84F1EE111E2C8B44004DE3C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F1EDEC1E2C8B44004DE3C8 /* Travelia */;
+			targetProxy = 84F1EE101E2C8B44004DE3C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84F1EDF41E2C8B44004DE3C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F1EDF51E2C8B44004DE3C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84F1EDFC1E2C8B44004DE3C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F1EDFD1E2C8B44004DE3C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F1EE161E2C8B44004DE3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84F1EE171E2C8B44004DE3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F1EE191E2C8B44004DE3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q666HR669V;
+				INFOPLIST_FILE = Travelia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Travelia.Travelia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		84F1EE1A1E2C8B44004DE3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q666HR669V;
+				INFOPLIST_FILE = Travelia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Travelia.Travelia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		84F1EE1C1E2C8B44004DE3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Q666HR669V;
+				INFOPLIST_FILE = TraveliaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Travelia.TraveliaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Travelia.app/Travelia";
+			};
+			name = Debug;
+		};
+		84F1EE1D1E2C8B44004DE3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Q666HR669V;
+				INFOPLIST_FILE = TraveliaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Travelia.TraveliaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Travelia.app/Travelia";
+			};
+			name = Release;
+		};
+		84F1EE1F1E2C8B44004DE3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Q666HR669V;
+				INFOPLIST_FILE = TraveliaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Travelia.TraveliaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Travelia;
+			};
+			name = Debug;
+		};
+		84F1EE201E2C8B44004DE3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Q666HR669V;
+				INFOPLIST_FILE = TraveliaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Travelia.TraveliaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Travelia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F1EDE81E2C8B44004DE3C8 /* Build configuration list for PBXProject "Travelia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F1EE161E2C8B44004DE3C8 /* Debug */,
+				84F1EE171E2C8B44004DE3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F1EE181E2C8B44004DE3C8 /* Build configuration list for PBXNativeTarget "Travelia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F1EE191E2C8B44004DE3C8 /* Debug */,
+				84F1EE1A1E2C8B44004DE3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84F1EE1B1E2C8B44004DE3C8 /* Build configuration list for PBXNativeTarget "TraveliaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F1EE1C1E2C8B44004DE3C8 /* Debug */,
+				84F1EE1D1E2C8B44004DE3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84F1EE1E1E2C8B44004DE3C8 /* Build configuration list for PBXNativeTarget "TraveliaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F1EE1F1E2C8B44004DE3C8 /* Debug */,
+				84F1EE201E2C8B44004DE3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84F1EDF71E2C8B44004DE3C8 /* Travelia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84F1EDF81E2C8B44004DE3C8 /* Travelia.xcdatamodel */,
+			);
+			currentVersion = 84F1EDF81E2C8B44004DE3C8 /* Travelia.xcdatamodel */;
+			path = Travelia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84F1EDE51E2C8B44004DE3C8 /* Project object */;
+}
