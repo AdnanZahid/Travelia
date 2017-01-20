@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B90A282B183D7AB0610E10F /* libPods-Travelia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C157A539DED31EFCDC0349 /* libPods-Travelia.a */; };
 		841A41CD1E2CB46500A11E48 /* bt-roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 841A41CC1E2CB46500A11E48 /* bt-roman.ttf */; };
 		841A41D11E2CB4F900A11E48 /* UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A41D01E2CB4F900A11E48 /* UISetup.swift */; };
+		84AA535C1E2CC0B1009B15A5 /* TRLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA535B1E2CC0B1009B15A5 /* TRLoginViewController.swift */; };
 		84F1EDF11E2C8B44004DE3C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EDF01E2C8B44004DE3C8 /* AppDelegate.swift */; };
 		84F1EDF31E2C8B44004DE3C8 /* TRSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1EDF21E2C8B44004DE3C8 /* TRSplashViewController.swift */; };
 		84F1EDF61E2C8B44004DE3C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F1EDF41E2C8B44004DE3C8 /* Main.storyboard */; };
@@ -39,8 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3288ABF4AA29BE96AD481F17 /* Pods-Travelia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Travelia/Pods-Travelia.debug.xcconfig"; sourceTree = "<group>"; };
+		38C157A539DED31EFCDC0349 /* libPods-Travelia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Travelia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		841A41CC1E2CB46500A11E48 /* bt-roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "bt-roman.ttf"; path = "../bt-roman.ttf"; sourceTree = "<group>"; };
 		841A41D01E2CB4F900A11E48 /* UISetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISetup.swift; sourceTree = "<group>"; };
+		8450C38C1E2E247800D93EC9 /* Objective-C bridging header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Objective-C bridging header.h"; sourceTree = "<group>"; };
+		84AA535B1E2CC0B1009B15A5 /* TRLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRLoginViewController.swift; sourceTree = "<group>"; };
 		84F1EDED1E2C8B44004DE3C8 /* Travelia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F1EDF01E2C8B44004DE3C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F1EDF21E2C8B44004DE3C8 /* TRSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRSplashViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +63,7 @@
 		84F1EE151E2C8B44004DE3C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F1EE211E2C8BF7004DE3C8 /* TRSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRSignUpViewController.swift; sourceTree = "<group>"; };
 		84F1EE251E2C9EE8004DE3C8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F670D97D9DDEDF76554D816E /* Pods-Travelia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Travelia/Pods-Travelia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B90A282B183D7AB0610E10F /* libPods-Travelia.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		254882C682843000E93AFF90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3288ABF4AA29BE96AD481F17 /* Pods-Travelia.debug.xcconfig */,
+				F670D97D9DDEDF76554D816E /* Pods-Travelia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		265C4FAEDBEBA61BBB5FE157 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38C157A539DED31EFCDC0349 /* libPods-Travelia.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		841A41CE1E2CB46900A11E48 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +132,8 @@
 				84F1EE071E2C8B44004DE3C8 /* TraveliaTests */,
 				84F1EE121E2C8B44004DE3C8 /* TraveliaUITests */,
 				84F1EDEE1E2C8B44004DE3C8 /* Products */,
+				254882C682843000E93AFF90 /* Pods */,
+				265C4FAEDBEBA61BBB5FE157 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,8 +156,10 @@
 				84F1EDFF1E2C8B44004DE3C8 /* Info.plist */,
 				84F1EDFC1E2C8B44004DE3C8 /* LaunchScreen.storyboard */,
 				84F1EDF41E2C8B44004DE3C8 /* Main.storyboard */,
+				8450C38C1E2E247800D93EC9 /* Objective-C bridging header.h */,
 				841A41CE1E2CB46900A11E48 /* Resources */,
 				84F1EDF71E2C8B44004DE3C8 /* Travelia.xcdatamodeld */,
+				84AA535B1E2CC0B1009B15A5 /* TRLoginViewController.swift */,
 				84F1EE211E2C8BF7004DE3C8 /* TRSignUpViewController.swift */,
 				84F1EDF21E2C8B44004DE3C8 /* TRSplashViewController.swift */,
 				841A41D01E2CB4F900A11E48 /* UISetup.swift */,
@@ -163,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F1EE181E2C8B44004DE3C8 /* Build configuration list for PBXNativeTarget "Travelia" */;
 			buildPhases = (
+				BDBDEA92A100194EB5C054EB /* [CP] Check Pods Manifest.lock */,
 				84F1EDE91E2C8B44004DE3C8 /* Sources */,
 				84F1EDEA1E2C8B44004DE3C8 /* Frameworks */,
 				84F1EDEB1E2C8B44004DE3C8 /* Resources */,
+				F77D4966A22628670117C9E3 /* [CP] Embed Pods Frameworks */,
+				BC3C7F3ADE25EC395D94C896 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,12 +321,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BC3C7F3ADE25EC395D94C896 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Travelia/Pods-Travelia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDBDEA92A100194EB5C054EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F77D4966A22628670117C9E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Travelia/Pods-Travelia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84F1EDE91E2C8B44004DE3C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				84F1EE261E2C9EE8004DE3C8 /* Constants.swift in Sources */,
+				84AA535C1E2CC0B1009B15A5 /* TRLoginViewController.swift in Sources */,
 				84F1EE221E2C8BF7004DE3C8 /* TRSignUpViewController.swift in Sources */,
 				84F1EDF91E2C8B44004DE3C8 /* Travelia.xcdatamodeld in Sources */,
 				84F1EDF31E2C8B44004DE3C8 /* TRSplashViewController.swift in Sources */,
@@ -447,6 +528,7 @@
 		};
 		84F1EE191E2C8B44004DE3C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3288ABF4AA29BE96AD481F17 /* Pods-Travelia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q666HR669V;
@@ -454,12 +536,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Travelia.Travelia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Travelia/Objective-C bridging header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		84F1EE1A1E2C8B44004DE3C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F670D97D9DDEDF76554D816E /* Pods-Travelia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q666HR669V;
@@ -467,6 +551,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Travelia.Travelia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Travelia/Objective-C bridging header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

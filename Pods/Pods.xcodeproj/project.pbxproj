@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1566A3BF6977BD666050CB55471A2676 /* BEMCheckBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B4301A4F974BFF474C1AC37B7924D /* BEMCheckBox-dummy.m */; };
+		68F816FE88076EDEAA0D650DEBC6F8FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		6C695A44B2F0B402B4D9ABEBCECEDFB6 /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DB335F1CDA6DAE417B796A91AB0E3A /* BEMAnimationManager.m */; };
+		A238CC92969512C5C0A7C8409F9A87C1 /* Pods-Travelia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D71CB834C59756958AADEAEA6E169 /* Pods-Travelia-dummy.m */; };
+		A9D1DF131554FFF23F0C3B55FE73E948 /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = E52E5B540CB3028FD6CC4519C0AEE21A /* BEMCheckBox.m */; };
+		CEE9FF1F2D926ACD9F533F020A45266F /* BEMPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EF996D5146B79FF23633590FF4C41EAA /* BEMPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1D5393855D20F8BB0C1C2FDB0FF2292 /* BEMCheckBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 43517132E0D5859CC0272B7F375B94C7 /* BEMCheckBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC911203328B3247D8B11F5ED49DED45 /* BEMAnimationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1627A6E81483E7308AB1FF8C27C20349 /* BEMAnimationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1E5C8103C3A9E425D3F8A56018696CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F77FEB669B94C63E644D37831F5FFB79 /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8A52C68DC41D65D8306C3E37FA2FDC /* BEMPathManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33B429A33A909CFDC267AF425B1C635F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C80F913EE213FA1EE3801FF8CEF0DD4;
+			remoteInfo = BEMCheckBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0829D5550A37A9E441F9D4D0E4CD3ECB /* Pods-Travelia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Travelia.release.xcconfig"; sourceTree = "<group>"; };
+		08D77A13FBDFE577C19E993926D3BC2D /* Pods-Travelia-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Travelia-acknowledgements.markdown"; sourceTree = "<group>"; };
+		15B7CC7C9F48DA6B2A66F5DF4C4BE689 /* Pods-Travelia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Travelia.debug.xcconfig"; sourceTree = "<group>"; };
+		1627A6E81483E7308AB1FF8C27C20349 /* BEMAnimationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMAnimationManager.h; path = Classes/BEMAnimationManager.h; sourceTree = "<group>"; };
+		2084A8659867B7AEAE957FE265AF26B6 /* libBEMCheckBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBEMCheckBox.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		43517132E0D5859CC0272B7F375B94C7 /* BEMCheckBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCheckBox.h; path = Classes/BEMCheckBox.h; sourceTree = "<group>"; };
+		4F8520D51990F30DDCC1DD2E14168371 /* Pods-Travelia-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Travelia-resources.sh"; sourceTree = "<group>"; };
+		7788A2E920DD15CF983EF0C25D7DFFEC /* BEMCheckBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BEMCheckBox.xcconfig; sourceTree = "<group>"; };
+		874B4301A4F974BFF474C1AC37B7924D /* BEMCheckBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BEMCheckBox-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ADDA1B5DF8FC54B4373651530D8E2B69 /* BEMCheckBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMCheckBox-prefix.pch"; sourceTree = "<group>"; };
+		B4DB335F1CDA6DAE417B796A91AB0E3A /* BEMAnimationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMAnimationManager.m; path = Classes/BEMAnimationManager.m; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D03D71CB834C59756958AADEAEA6E169 /* Pods-Travelia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Travelia-dummy.m"; sourceTree = "<group>"; };
+		DC8A52C68DC41D65D8306C3E37FA2FDC /* BEMPathManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMPathManager.m; path = Classes/BEMPathManager.m; sourceTree = "<group>"; };
+		E52E5B540CB3028FD6CC4519C0AEE21A /* BEMCheckBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBox.m; path = Classes/BEMCheckBox.m; sourceTree = "<group>"; };
+		EF996D5146B79FF23633590FF4C41EAA /* BEMPathManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMPathManager.h; path = Classes/BEMPathManager.h; sourceTree = "<group>"; };
+		FBAB45674548072BF177EABDA5207426 /* libPods-Travelia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Travelia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA639ABCA85F48F00634A78BF689EA2 /* Pods-Travelia-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Travelia-acknowledgements.plist"; sourceTree = "<group>"; };
+		FE0C4159DD47A4CBF0FF0D436E77F43A /* Pods-Travelia-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Travelia-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		747FCEE73D6A15F6BACAF046214E83FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F816FE88076EDEAA0D650DEBC6F8FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDBB19863565CFC1F8B2BF2F0E4D41A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E5C8103C3A9E425D3F8A56018696CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C218DDD35091B999EA60FE99BBE24F9 /* Pods-Travelia */ = {
+			isa = PBXGroup;
+			children = (
+				08D77A13FBDFE577C19E993926D3BC2D /* Pods-Travelia-acknowledgements.markdown */,
+				FCA639ABCA85F48F00634A78BF689EA2 /* Pods-Travelia-acknowledgements.plist */,
+				D03D71CB834C59756958AADEAEA6E169 /* Pods-Travelia-dummy.m */,
+				FE0C4159DD47A4CBF0FF0D436E77F43A /* Pods-Travelia-frameworks.sh */,
+				4F8520D51990F30DDCC1DD2E14168371 /* Pods-Travelia-resources.sh */,
+				15B7CC7C9F48DA6B2A66F5DF4C4BE689 /* Pods-Travelia.debug.xcconfig */,
+				0829D5550A37A9E441F9D4D0E4CD3ECB /* Pods-Travelia.release.xcconfig */,
+			);
+			name = "Pods-Travelia";
+			path = "Target Support Files/Pods-Travelia";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		59EB24CD5354DACDD4B91136F064B2A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2084A8659867B7AEAE957FE265AF26B6 /* libBEMCheckBox.a */,
+				FBAB45674548072BF177EABDA5207426 /* libPods-Travelia.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F9A636D4E1486FC7EE1B04BE74B420B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C218DDD35091B999EA60FE99BBE24F9 /* Pods-Travelia */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A000AFFD5004012C0B35CEF34DCF643F /* Pods */,
+				59EB24CD5354DACDD4B91136F064B2A6 /* Products */,
+				5F9A636D4E1486FC7EE1B04BE74B420B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A000AFFD5004012C0B35CEF34DCF643F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E58213EBD7F0306328CA414CB1498C6B /* BEMCheckBox */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D62DAADFCA1FF064AAE3088BBAD07DD9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7788A2E920DD15CF983EF0C25D7DFFEC /* BEMCheckBox.xcconfig */,
+				874B4301A4F974BFF474C1AC37B7924D /* BEMCheckBox-dummy.m */,
+				ADDA1B5DF8FC54B4373651530D8E2B69 /* BEMCheckBox-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BEMCheckBox";
+			sourceTree = "<group>";
+		};
+		E58213EBD7F0306328CA414CB1498C6B /* BEMCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				1627A6E81483E7308AB1FF8C27C20349 /* BEMAnimationManager.h */,
+				B4DB335F1CDA6DAE417B796A91AB0E3A /* BEMAnimationManager.m */,
+				43517132E0D5859CC0272B7F375B94C7 /* BEMCheckBox.h */,
+				E52E5B540CB3028FD6CC4519C0AEE21A /* BEMCheckBox.m */,
+				EF996D5146B79FF23633590FF4C41EAA /* BEMPathManager.h */,
+				DC8A52C68DC41D65D8306C3E37FA2FDC /* BEMPathManager.m */,
+				D62DAADFCA1FF064AAE3088BBAD07DD9 /* Support Files */,
+			);
+			path = BEMCheckBox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		63FBB7A4A44B9329E9359F67B4365B98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC911203328B3247D8B11F5ED49DED45 /* BEMAnimationManager.h in Headers */,
+				D1D5393855D20F8BB0C1C2FDB0FF2292 /* BEMCheckBox.h in Headers */,
+				CEE9FF1F2D926ACD9F533F020A45266F /* BEMPathManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8C80F913EE213FA1EE3801FF8CEF0DD4 /* BEMCheckBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 955F5F0255011485D01CBE8E153B3757 /* Build configuration list for PBXNativeTarget "BEMCheckBox" */;
+			buildPhases = (
+				A2805C0188FE2EC26941C41D02F6CB8B /* Sources */,
+				747FCEE73D6A15F6BACAF046214E83FD /* Frameworks */,
+				63FBB7A4A44B9329E9359F67B4365B98 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BEMCheckBox;
+			productName = BEMCheckBox;
+			productReference = 2084A8659867B7AEAE957FE265AF26B6 /* libBEMCheckBox.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CB23FA56A912F455F61EB6D7E029EA65 /* Pods-Travelia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4133E5E3292708EDC3E47A4838C3C311 /* Build configuration list for PBXNativeTarget "Pods-Travelia" */;
+			buildPhases = (
+				C1B7E5D17EA9B48E757BF135A18F4A3B /* Sources */,
+				BDBB19863565CFC1F8B2BF2F0E4D41A7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				483DC47D2EADCDE9EF3C33C02FCDF23B /* PBXTargetDependency */,
+			);
+			name = "Pods-Travelia";
+			productName = "Pods-Travelia";
+			productReference = FBAB45674548072BF177EABDA5207426 /* libPods-Travelia.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 59EB24CD5354DACDD4B91136F064B2A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C80F913EE213FA1EE3801FF8CEF0DD4 /* BEMCheckBox */,
+				CB23FA56A912F455F61EB6D7E029EA65 /* Pods-Travelia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2805C0188FE2EC26941C41D02F6CB8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C695A44B2F0B402B4D9ABEBCECEDFB6 /* BEMAnimationManager.m in Sources */,
+				1566A3BF6977BD666050CB55471A2676 /* BEMCheckBox-dummy.m in Sources */,
+				A9D1DF131554FFF23F0C3B55FE73E948 /* BEMCheckBox.m in Sources */,
+				F77FEB669B94C63E644D37831F5FFB79 /* BEMPathManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1B7E5D17EA9B48E757BF135A18F4A3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A238CC92969512C5C0A7C8409F9A87C1 /* Pods-Travelia-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		483DC47D2EADCDE9EF3C33C02FCDF23B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BEMCheckBox;
+			target = 8C80F913EE213FA1EE3801FF8CEF0DD4 /* BEMCheckBox */;
+			targetProxy = 33B429A33A909CFDC267AF425B1C635F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4E3F9C36F4DF02B0F1C1E523DF50CF97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7788A2E920DD15CF983EF0C25D7DFFEC /* BEMCheckBox.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BEMCheckBox/BEMCheckBox-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		58BABE57D604F619526A2C9FA8209142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7788A2E920DD15CF983EF0C25D7DFFEC /* BEMCheckBox.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BEMCheckBox/BEMCheckBox-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6FD1D41A493C31DB2F9F3F65E0881256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0829D5550A37A9E441F9D4D0E4CD3ECB /* Pods-Travelia.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F73297DA27B70DB5AF300B8D652B25AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B7CC7C9F48DA6B2A66F5DF4C4BE689 /* Pods-Travelia.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4133E5E3292708EDC3E47A4838C3C311 /* Build configuration list for PBXNativeTarget "Pods-Travelia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F73297DA27B70DB5AF300B8D652B25AE /* Debug */,
+				6FD1D41A493C31DB2F9F3F65E0881256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		955F5F0255011485D01CBE8E153B3757 /* Build configuration list for PBXNativeTarget "BEMCheckBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E3F9C36F4DF02B0F1C1E523DF50CF97 /* Debug */,
+				58BABE57D604F619526A2C9FA8209142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

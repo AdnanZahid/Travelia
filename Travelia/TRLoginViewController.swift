@@ -1,5 +1,5 @@
 //
-//  TRSignUpViewController.swift
+//  TRLoginViewController.swift
 //  Travelia
 //
 //  Created by Adnan Zahid on 1/16/17.
@@ -8,19 +8,19 @@
 
 import UIKit
 
-class TRSignUpViewController: UIViewController {
+class TRLoginViewController: UIViewController {
     
     let personIconImageView = UIImageView(frame: CGRect(x: textFieldIconX, y: textFieldIconY, width: textFieldIconWidth, height: textFieldIconHeight))
-    let emailIconImageView = UIImageView(frame: CGRect(x: textFieldIconX, y: textFieldIconY, width: textFieldIconWidth, height: textFieldIconHeight))
+    
     let passwordIconImageView = UIImageView(frame: CGRect(x: textFieldIconX, y: textFieldIconY, width: textFieldIconWidth, height: textFieldIconHeight))
-    let rePasswordIconImageView = UIImageView(frame: CGRect(x: textFieldIconX, y: textFieldIconY, width: textFieldIconWidth, height: textFieldIconHeight))
     
     @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var emailAddressTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var rePasswordTextField: UITextField!
     
-    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var rememberMeCheckbox: BEMCheckBox!
+    
+    @IBOutlet weak var loginButton: UIButton!
     
     var roundedRectangleViewsArray: [UIView] = []
     
@@ -30,12 +30,19 @@ class TRSignUpViewController: UIViewController {
         makeRoundedRectangleViews()
         
         addIconsToTextFields()
-        //performSegue(withIdentifier: "kSignUpToLoginSegue", sender: nil)
+        
+        changeCheckBoxAppearance()
+    }
+    
+    func changeCheckBoxAppearance() {
+        
+        rememberMeCheckbox.onTintColor = UIColor.white
+        rememberMeCheckbox.onCheckColor = UIColor.white
     }
     
     func makeRoundedRectangleViews() {
         
-        roundedRectangleViewsArray = [usernameTextField, emailAddressTextField, passwordTextField, rePasswordTextField, signUpButton]
+        roundedRectangleViewsArray = [usernameTextField, passwordTextField, loginButton]
         
         for view in roundedRectangleViewsArray {
             
@@ -47,22 +54,31 @@ class TRSignUpViewController: UIViewController {
     func addIconsToTextFields() {
         
         personIconImageView.image = personIconImage
-        emailIconImageView.image = emailIconImage
         passwordIconImageView.image = passwordIconImage
-        rePasswordIconImageView.image = rePasswordIconImage
         
         usernameTextField.leftViewMode = UITextFieldViewMode.always
-        emailAddressTextField.leftViewMode = UITextFieldViewMode.always
         passwordTextField.leftViewMode = UITextFieldViewMode.always
-        rePasswordTextField.leftViewMode = UITextFieldViewMode.always
         
         usernameTextField.leftView = personIconImageView
-        emailAddressTextField.leftView = emailIconImageView
         passwordTextField.leftView = passwordIconImageView
-        rePasswordTextField.leftView = rePasswordIconImageView
+    }
+    
+    @IBAction func rememberMeTapped(_ sender: AnyObject) {
+        
+        rememberMeCheckbox.setOn(!rememberMeCheckbox.on, animated: true)
+    }
+    
+    @IBAction func forgotPasswordTapped(_ sender: AnyObject) {
+        
+        
     }
     
     @IBAction func signUpButtonTapped(_ sender: AnyObject) {
+        
+        performSegue(withIdentifier: kLoginToSignUpSegue, sender: self)
+    }
+    
+    @IBAction func loginTapped(_ sender: AnyObject) {
         
     }
 }

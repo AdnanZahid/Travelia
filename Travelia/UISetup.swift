@@ -19,7 +19,8 @@ class UISetup {
     private static func setCustomFonts() {
         
         UITextField.appearance().font = btRomanFont
-        UIButton.appearance().titleLabel?.font = btRomanFont
+        UILabel.appearance().font = btRomanFont
+//        UIButton.appearance().titleLabel?.font = btRomanFont
     }
     
     private static func setCustomFontColors() {
