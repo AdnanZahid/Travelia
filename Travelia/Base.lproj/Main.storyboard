@@ -179,7 +179,6 @@
         <!--Login View Controller-->
         <scene sceneID="vRZ-NF-j9x">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Igy-B0-9Cg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="oIr-aS-ojG" customClass="TRLoginViewController" customModule="Travelia" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="btx-Xe-r23"/>
@@ -366,11 +365,12 @@
                     <connections>
                         <outlet property="loginButton" destination="xb9-v9-GzY" id="Upz-yN-O3q"/>
                         <outlet property="passwordTextField" destination="Lpt-29-jOx" id="mNP-Mn-5m8"/>
-                        <outlet property="rememberMeCheckbox" destination="JVM-Yf-EEL" id="QTW-TF-FBP"/>
+                        <outlet property="rememberMeCheckbox" destination="JVM-Yf-EEL" id="JpD-Zi-QC8"/>
                         <outlet property="usernameTextField" destination="Xhr-cP-fZX" id="Nn1-om-RR0"/>
                         <segue destination="LoK-hH-ZGi" kind="show" identifier="kLoginToSignUpSegue" id="BV1-G0-G2q"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Igy-B0-9Cg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="743" y="125"/>
         </scene>

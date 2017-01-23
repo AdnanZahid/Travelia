@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BEMCheckBox
 
 class TRLoginViewController: UIViewController {
     

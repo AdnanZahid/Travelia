@@ -1,6 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '10.0'
+use_frameworks!
 
 target 'Travelia' do
-  pod 'BEMCheckBox'
+    pod 'BEMCheckBox'
+    pod 'Alamofire', '~> 4.3'
 end

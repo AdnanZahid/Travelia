@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B90A282B183D7AB0610E10F /* libPods-Travelia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C157A539DED31EFCDC0349 /* libPods-Travelia.a */; };
+		31FE6AB52C2673C0E2E144E6 /* Pods_Travelia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9B26E85D007FF29DDBC710 /* Pods_Travelia.framework */; };
 		841A41CD1E2CB46500A11E48 /* bt-roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 841A41CC1E2CB46500A11E48 /* bt-roman.ttf */; };
 		841A41D11E2CB4F900A11E48 /* UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A41D01E2CB4F900A11E48 /* UISetup.swift */; };
 		84AA535C1E2CC0B1009B15A5 /* TRLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA535B1E2CC0B1009B15A5 /* TRLoginViewController.swift */; };
@@ -42,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		3288ABF4AA29BE96AD481F17 /* Pods-Travelia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Travelia/Pods-Travelia.debug.xcconfig"; sourceTree = "<group>"; };
-		38C157A539DED31EFCDC0349 /* libPods-Travelia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Travelia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		841A41CC1E2CB46500A11E48 /* bt-roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "bt-roman.ttf"; path = "../bt-roman.ttf"; sourceTree = "<group>"; };
 		841A41D01E2CB4F900A11E48 /* UISetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISetup.swift; sourceTree = "<group>"; };
 		8450C38C1E2E247800D93EC9 /* Objective-C bridging header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Objective-C bridging header.h"; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		84F1EE151E2C8B44004DE3C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F1EE211E2C8BF7004DE3C8 /* TRSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRSignUpViewController.swift; sourceTree = "<group>"; };
 		84F1EE251E2C9EE8004DE3C8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9B9B26E85D007FF29DDBC710 /* Pods_Travelia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Travelia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F670D97D9DDEDF76554D816E /* Pods-Travelia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Travelia/Pods-Travelia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B90A282B183D7AB0610E10F /* libPods-Travelia.a in Frameworks */,
+				31FE6AB52C2673C0E2E144E6 /* Pods_Travelia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 		265C4FAEDBEBA61BBB5FE157 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				38C157A539DED31EFCDC0349 /* libPods-Travelia.a */,
+				9B9B26E85D007FF29DDBC710 /* Pods_Travelia.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,17 +257,20 @@
 					84F1EDEC1E2C8B44004DE3C8 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = Q666HR669V;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					84F1EE031E2C8B44004DE3C8 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = Q666HR669V;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 84F1EDEC1E2C8B44004DE3C8;
 					};
 					84F1EE0E1E2C8B44004DE3C8 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = Q666HR669V;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 84F1EDEC1E2C8B44004DE3C8;
 					};
@@ -349,7 +352,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F77D4966A22628670117C9E3 /* [CP] Embed Pods Frameworks */ = {

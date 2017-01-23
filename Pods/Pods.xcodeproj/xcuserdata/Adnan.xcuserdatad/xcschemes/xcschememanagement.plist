@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>BEMCheckBox.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8C80F913EE213FA1EE3801FF8CEF0DD4</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CB23FA56A912F455F61EB6D7E029EA65</key>
+		<key>9D546D7B173E7C24B76A95D76072C28B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C0F66EC21AF4E86F373B282628985CC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

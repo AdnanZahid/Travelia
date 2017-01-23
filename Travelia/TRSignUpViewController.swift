@@ -16,8 +16,11 @@ class TRSignUpViewController: UIViewController {
     let rePasswordIconImageView = UIImageView(frame: CGRect(x: textFieldIconX, y: textFieldIconY, width: textFieldIconWidth, height: textFieldIconHeight))
     
     @IBOutlet weak var usernameTextField: UITextField!
+    
     @IBOutlet weak var emailAddressTextField: UITextField!
+    
     @IBOutlet weak var passwordTextField: UITextField!
+    
     @IBOutlet weak var rePasswordTextField: UITextField!
     
     @IBOutlet weak var signUpButton: UIButton!

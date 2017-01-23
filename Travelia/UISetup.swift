@@ -16,14 +16,14 @@ class UISetup {
         UISetup.setCustomFontColors()
     }
 
-    private static func setCustomFonts() {
+    fileprivate static func setCustomFonts() {
         
         UITextField.appearance().font = btRomanFont
         UILabel.appearance().font = btRomanFont
 //        UIButton.appearance().titleLabel?.font = btRomanFont
     }
     
-    private static func setCustomFontColors() {
+    fileprivate static func setCustomFontColors() {
         
     }
 }
