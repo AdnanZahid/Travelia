@@ -8,6 +8,8 @@
 
 import UIKit
 import BEMCheckBox
+import Alamofire
+import SwiftyJSON
 
 class TRLoginViewController: UIViewController {
     
@@ -33,6 +35,8 @@ class TRLoginViewController: UIViewController {
         addIconsToTextFields()
         
         changeCheckBoxAppearance()
+        
+        loginAPICall()
     }
     
     func changeCheckBoxAppearance() {
@@ -62,6 +66,28 @@ class TRLoginViewController: UIViewController {
         
         usernameTextField.leftView = personIconImageView
         passwordTextField.leftView = passwordIconImageView
+    }
+    
+    func loginAPICall() {
+        
+        Alamofire.request("http://sample-env.dvprfpyk3f.us-west-2.elasticbeanstalk.com/android/v1/signin/login?userName=Adnan&userPass=Zahid").responseJSON { (responseData) -> Void in
+            
+            if((responseData.result.value) != nil) {
+                let json = JSON(responseData.result.value!)
+                
+                let rows = json["rows"]
+                
+                let firstRow = rows[0]
+                
+                if let id = firstRow["id"].string,
+                    let userName = firstRow["userName"].string,
+                    let userEmail = firstRow["userEmail"].string {
+                    
+                    
+                    
+                }
+            }
+        }
     }
     
     @IBAction func rememberMeTapped(_ sender: AnyObject) {
