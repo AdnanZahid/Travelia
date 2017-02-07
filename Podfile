@@ -6,4 +6,13 @@ target 'Travelia' do
     pod 'BEMCheckBox'
     pod 'SwiftyJSON'
     pod 'Alamofire', '~> 4.3'
+    pod 'PKHUD', '~> 4.0'
+    pod 'Firebase/Auth'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKLoginKit'
+    pod 'FBSDKShareKit'
+    pod 'Fabric'
+    pod 'TwitterKit'
+    pod 'GoogleSignIn'
+    pod 'Google/SignIn'
 end
