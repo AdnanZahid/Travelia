@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TRSignUpViewController: UIViewController {
+class TRSignUpViewController: APIViewController {
     
     let personIconImageView = UIImageView(frame: CGRect(x: textFieldIconX, y: textFieldIconY, width: textFieldIconWidth, height: textFieldIconHeight))
     let emailIconImageView = UIImageView(frame: CGRect(x: textFieldIconX, y: textFieldIconY, width: textFieldIconWidth, height: textFieldIconHeight))
@@ -26,6 +26,11 @@ class TRSignUpViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     
     var roundedRectangleViewsArray: [UIView] = []
+    
+    override func getService() -> Service {
+        
+        return TRUserService()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,12 +84,16 @@ class TRSignUpViewController: UIViewController {
         
         if success == true {
             
-            TRUserService.sharedInstance.signUpAPI(userName: usernameTextField.text!, userEmail: emailAddressTextField.text!, password: passwordTextField.text!, success: {
+            let userService = service as! TRUserService
+            
+            userService.signUpAPI(userName: usernameTextField.text!, userEmail: emailAddressTextField.text!, password: passwordTextField.text!, success: {
                 
-                self.present(AlertView.sharedInstance.alertViewWith(title: signedUpSuccessTitle, message: signedUpSuccessMessage, buttonTitle: signedUpSuccessButton, handler: {
-                    
-                    
-                }), animated: true, completion: nil)
+//                self.present(AlertView.sharedInstance.alertViewWith(title: signedUpSuccessTitle, message: signedUpSuccessMessage, buttonTitle: signedUpSuccessButton, handler: {
+//                    
+//                    
+//                }), animated: true, completion: nil)
+                
+                self.performSegue(withIdentifier: kSignUpToProfileSegue, sender: self)
                 
                 }, failure: {
                     

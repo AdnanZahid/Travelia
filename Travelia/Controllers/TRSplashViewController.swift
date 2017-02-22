@@ -13,7 +13,13 @@ class TRSplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        performSegue(withIdentifier: kSplashToLoginSegue, sender: self)
+        if TRUserData.getUser() == nil {
+        
+            performSegue(withIdentifier: kSplashToLoginSegue, sender: self)
+            
+        } else {
+            
+            performSegue(withIdentifier: kSplashToProfileSegue, sender: self)
+        }
     }
 }
-

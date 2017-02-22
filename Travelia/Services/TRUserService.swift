@@ -8,29 +8,8 @@
 
 import Alamofire
 import SwiftyJSON
-import PKHUD
 
-class TRUserService {
-    
-    static let sharedInstance: TRUserService = TRUserService()
-    
-    var currentUser: TRUser?
-    
-    func makeRequest() {
-        
-        PKHUD.sharedHUD.contentView = PKHUDProgressView()
-        PKHUD.sharedHUD.show()
-    }
-    
-    func success() {
-        
-        PKHUD.sharedHUD.hide()
-    }
-    
-    func failure() {
-        
-        PKHUD.sharedHUD.hide()
-    }
+class TRUserService: Service {
     
     func loginAPI(userName: String, password: String, success: @escaping () -> (), failure: @escaping () -> ()) {
         
@@ -44,25 +23,29 @@ class TRUserService {
                 
                 let json = JSON(value)
                 
-                let rows = json["rows"]
+                if self.isError(value: json) == false {
                 
-                let firstRow = rows[0]
-                
-                if let _ = firstRow["id"].string,
-                    let userName = firstRow["userName"].string,
-                    let userEmail = firstRow["userEmail"].string {
+                    let data = json["UserDto"]
                     
-                    self.setCurrentUser(userName: userName, userEmail: userEmail)
-                    
-                    self.success()
-                    success()
-                    
+                    if let id = Int(data["id"].string!),
+                        let userName = data["userName"].string,
+                        let userEmail = data["userEmail"].string {
+                        
+                        self.setCurrentUser(id: id, userName: userName, userEmail: userEmail)
+                        
+                        self.success()
+                        success()
+                        
+                    } else {
+                        
+                        self.failure()
+                        failure()
+                    }
                 } else {
                     
                     self.failure()
                     failure()
                 }
-                
             } else {
                 
                 self.failure()
@@ -85,13 +68,31 @@ class TRUserService {
         
         Alamofire.request(URL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (responseData) -> Void in
             
-            if let _ = responseData.result.value {
+            if let value = responseData.result.value {
+                
+                let json = JSON(value)
+                
+                if self.isError(value: json) == false {
                     
-                self.setCurrentUser(userName: userName, userEmail: userEmail)
+                    let data = json["UserDto"]
                 
-                self.success()
-                success()
-                
+                    if let id = Int(data["id"].string!) {
+                    
+                        self.setCurrentUser(id: id, userName: userName, userEmail: userEmail)
+                        
+                        self.success()
+                        success()
+                        
+                    } else {
+                        
+                        self.failure()
+                        failure()
+                    }
+                } else {
+                    
+                    self.failure()
+                    failure()
+                }
             } else {
                 
                 self.failure()
@@ -100,8 +101,42 @@ class TRUserService {
         }
     }
     
-    func setCurrentUser(userName: String, userEmail: String) {
+    func otherProfileAPI(id: Int, success: @escaping () -> (), failure: @escaping () -> ()) {
         
-        currentUser = TRUser(userName: userName, userEmail: userEmail)
+        let URL = "\(baseURL)/user/showprofile?requestorId=3&requestedId=\(id)"
+        
+        makeRequest()
+        
+        Alamofire.request(URL).validate().responseJSON { (responseData) -> Void in
+            
+            if let value = responseData.result.value {
+                
+                let json = JSON(value)
+                
+                if self.isError(value: json) == false {
+                    
+                    let data = json["UserProfileDto"]
+            
+                    self.populateData(value: data)
+                    
+                    self.success()
+                    success()
+                    
+                } else {
+                    
+                    self.failure()
+                    failure()
+                }
+            } else {
+                
+                self.failure()
+                failure()
+            }
+        }
+    }
+    
+    func setCurrentUser(id: Int, userName: String, userEmail: String) {
+        
+        TRUser.sharedInstance.setupUser(id: id, userName: userName, userEmail: userEmail)
     }
 }

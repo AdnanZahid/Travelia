@@ -49,12 +49,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HMSegmentedControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PKHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-Travelia.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyAvatar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -72,7 +82,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>142AC68EE85EF2A5566C871991A89AD8</key>
+		<key>13A15187EED7F1E2D55E498F44488C3F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3FB1B44FBD407D4A4B3B3A8473C4154A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +102,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7BFE621CB93FAB6EB9903764AE764173</key>
+		<key>7891E2B724C54EF58FB1692B34F1455C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -98,6 +113,11 @@
 			<true/>
 		</dict>
 		<key>B1C4AAFAF49036C7007633DAA3C806AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B9F53407211B13164B86AC98A222A3CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -15,4 +15,8 @@ target 'Travelia' do
     pod 'TwitterKit'
     pod 'GoogleSignIn'
     pod 'Google/SignIn'
+    pod 'SwiftyAvatar', '~> 1.1'
+    pod 'HMSegmentedControl'
+    pod 'GoogleMaps'
+    pod 'GooglePlaces'
 end

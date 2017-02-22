@@ -44,6 +44,13 @@ PODS:
     - GoogleSymbolUtilities (~> 1.1)
   - GoogleInterchangeUtilities (1.2.2):
     - GoogleSymbolUtilities (~> 1.1)
+  - GoogleMaps (2.1.1):
+    - GoogleMaps/Maps (= 2.1.1)
+  - GoogleMaps/Base (2.1.1)
+  - GoogleMaps/Maps (2.1.1):
+    - GoogleMaps/Base
+  - GooglePlaces (2.1.1):
+    - GoogleMaps/Base (= 2.1.1)
   - GoogleSignIn (4.0.1):
     - GoogleAppUtilities (~> 1.1)
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
@@ -67,7 +74,9 @@ PODS:
   - GTMSessionFetcher/Core (1.1.8)
   - GTMSessionFetcher/Full (1.1.8):
     - GTMSessionFetcher/Core (= 1.1.8)
+  - HMSegmentedControl (1.5.3)
   - PKHUD (4.2.0)
+  - SwiftyAvatar (1.1)
   - SwiftyJSON (3.1.4)
   - TwitterCore (2.7.0):
     - Fabric
@@ -83,8 +92,12 @@ DEPENDENCIES:
   - FBSDKShareKit
   - Firebase/Auth
   - Google/SignIn
+  - GoogleMaps
+  - GooglePlaces
   - GoogleSignIn
+  - HMSegmentedControl
   - PKHUD (~> 4.0)
+  - SwiftyAvatar (~> 1.1)
   - SwiftyJSON
   - TwitterKit
 
@@ -104,16 +117,20 @@ SPEC CHECKSUMS:
   Google: 813c467362eabc11385f5a5cc9ad0cb651a58f4e
   GoogleAppUtilities: a8a552aa74f6597f805e45b5a3962766c3134973
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
+  GoogleMaps: a5b5bbe47734e2443bde781a6aa64e69fdb6d785
+  GooglePlaces: 35636d86e5020cba3856eb988c09a5491de0a65a
   GoogleSignIn: a8694c0a8e6d1b0ec77c58014de5bfd4ba2fa766
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   PKHUD: 48af884cf00c2213b0313b739d914e6cab1c0f5e
+  SwiftyAvatar: dcb1119adacf435f52d3510a42f60d8194b15a10
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   TwitterCore: fbdbeaf6d2d20cf7c7aa4136fe5173c1c85df2e2
   TwitterKit: 97e729ceea041d174126235bf6ff67dcf37772d4
 
-PODFILE CHECKSUM: 208184d2fe6c3f98f593fcda00a3279c9a384ffa
+PODFILE CHECKSUM: 4860928f23942694008ae136a539a3100761bc5a
 
 COCOAPODS: 1.1.1

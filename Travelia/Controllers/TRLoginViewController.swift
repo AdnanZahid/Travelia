@@ -14,7 +14,7 @@ import FBSDKLoginKit
 import TwitterKit
 import GoogleSignIn
 
-class TRLoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate {
+class TRLoginViewController: APIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate {
     
     let personIconImageView = UIImageView(frame: CGRect(x: textFieldIconX, y: textFieldIconY, width: textFieldIconWidth, height: textFieldIconHeight))
     
@@ -33,6 +33,11 @@ class TRLoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSign
     @IBOutlet weak var twitterLoginButton: TWTRLogInButton!
     
     var roundedRectangleViewsArray: [UIView] = []
+    
+    override func getService() -> Service {
+        
+        return TRUserService()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -150,12 +155,16 @@ class TRLoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSign
         
         if success == true {
             
-            TRUserService.sharedInstance.loginAPI(userName: userName, password: password, success: {
+            let userService = service as! TRUserService
+            
+            userService.loginAPI(userName: userName, password: password, success: {
                 
-                self.present(AlertView.sharedInstance.alertViewWith(title: loggedInSuccessTitle, message: loggedInSuccessMessage, buttonTitle: loggedInSuccessButton, handler: {
-                    
-                    
-                }), animated: true, completion: nil)
+//                self.present(AlertView.sharedInstance.alertViewWith(title: loggedInSuccessTitle, message: loggedInSuccessMessage, buttonTitle: loggedInSuccessButton, handler: {
+//                    
+//                    
+//                }), animated: true, completion: nil)
+                
+                self.performSegue(withIdentifier: kLoginToProfileSegue, sender: self)
                 
                 }, failure: {
                     

@@ -13,3 +13,4 @@
 #endif /* Objective_C_bridging_header_h */
 
 #import <BEMCheckBox/BEMCheckBox.h>
+#import <HMSegmentedControl/HMSegmentedControl.h>

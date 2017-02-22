@@ -8,4 +8,4 @@
 
 import Foundation
 
-let baseURL = "http://sample-env.dvprfpyk3f.us-west-2.elasticbeanstalk.com/android/v1"
+let baseURL = "http://sample-env.dvprfpyk3f.us-west-2.elasticbeanstalk.com/v1"

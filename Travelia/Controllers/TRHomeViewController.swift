@@ -6,4 +6,13 @@
 //  Copyright © 2017 Adnan Zahid. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class TRHomeViewController: APIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        performSegue(withIdentifier: kHomeToProfileSegue, sender: self)
+    }
+}

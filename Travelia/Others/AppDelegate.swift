@@ -13,6 +13,7 @@ import Firebase
 import Fabric
 import TwitterKit
 import GoogleSignIn
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -37,6 +38,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
          */
         setupGoogleSignIn()
         
+        /**
+         * Setup Google Maps
+         */
+        setupGoogleMaps()
+        
         return true
     }
     
@@ -44,6 +50,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
+    }
+    
+    func setupGoogleMaps() {
+        
+        GMSServices.provideAPIKey("AIzaSyB_eNy_c6J1rsf7T5pR7tTsGh3rYA7EpnQ")
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
