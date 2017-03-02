@@ -75,6 +75,7 @@ PODS:
   - GTMSessionFetcher/Full (1.1.8):
     - GTMSessionFetcher/Core (= 1.1.8)
   - HMSegmentedControl (1.5.3)
+  - IQKeyboardManagerSwift (4.0.8)
   - PKHUD (4.2.0)
   - SwiftyAvatar (1.1)
   - SwiftyJSON (3.1.4)
@@ -96,6 +97,7 @@ DEPENDENCIES:
   - GooglePlaces
   - GoogleSignIn
   - HMSegmentedControl
+  - IQKeyboardManagerSwift
   - PKHUD (~> 4.0)
   - SwiftyAvatar (~> 1.1)
   - SwiftyJSON
@@ -125,12 +127,13 @@ SPEC CHECKSUMS:
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
   PKHUD: 48af884cf00c2213b0313b739d914e6cab1c0f5e
   SwiftyAvatar: dcb1119adacf435f52d3510a42f60d8194b15a10
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   TwitterCore: fbdbeaf6d2d20cf7c7aa4136fe5173c1c85df2e2
   TwitterKit: 97e729ceea041d174126235bf6ff67dcf37772d4
 
-PODFILE CHECKSUM: 4860928f23942694008ae136a539a3100761bc5a
+PODFILE CHECKSUM: 2faeddce57b7f461e6c33d6cd384fb83ba7b7c16
 
 COCOAPODS: 1.1.1

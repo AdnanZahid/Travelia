@@ -19,6 +19,9 @@ class TRUser: NSObject, NSCoding {
     var firstName: String?
     var lastName: String?
     
+    var totalNumberOfPost: Int?
+    var numberOfFollowers: Int?
+    
     func setupUser(user: TRUser) {
         
         setupUser(id: user.id!, userName: user.userName!, userEmail: user.userEmail!)
@@ -31,6 +34,12 @@ class TRUser: NSObject, NSCoding {
         self.userEmail = userEmail
         
         TRUserData.setUser(user: self)
+    }
+    
+    func setupPostsAndFollowers(totalNumberOfPost: Int, numberOfFollowers: Int) {
+        
+        self.totalNumberOfPost = totalNumberOfPost
+        self.numberOfFollowers = numberOfFollowers
     }
     
     override init() {

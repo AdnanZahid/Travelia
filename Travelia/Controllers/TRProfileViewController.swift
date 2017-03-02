@@ -7,26 +7,19 @@
 //
 
 import UIKit
-import HMSegmentedControl
 import SwiftyJSON
 
-class TRProfileViewController: LoaderViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    @IBOutlet weak var segmentedControl: HMSegmentedControl!
+class TRProfileViewController: LoaderViewController, TRProfileHeaderViewDelegate, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var fullNameLabel: UILabel!
-    
-    @IBOutlet weak var descriptionLabel: UILabel!
-    
-    @IBOutlet weak var currentLocationLabel: UILabel!
+    var headerView: TRProfileHeaderView?
     
     var travellingPostsArray: [TRTravellingPost] = []
     
     override func getService() -> Service {
         
-        return TRUserService()
+        return TRProfileService()
     }
     
     override func viewDidLoad() {
@@ -37,19 +30,37 @@ class TRProfileViewController: LoaderViewController, UITableViewDataSource, UITa
         
         setupTableView()
         
-        fullNameLabel.text = value["profileName"].string
-        descriptionLabel.text = value["desc"].string
+        headerView?.fullNameField.text = value["profileName"].string
+        headerView?.descriptionField.text = value["desc"].string
         
         travellingPostsArray = TRTravellingPost.getTravellingPosts(value: value["travelingPostDtoList"])
         
-        setupSegmentedControl(postsCount: value["totalNumberOfPost"].int!, wishlistCount: 0, followersCount: value["numberOfFollowers"].int!)
+        let totalNumberOfPost: Int = extractValue(value: value, key: "totalNumberOfPost")
+        
+        let numberOfFollowers: Int = extractValue(value: value, key: "numberOfFollowers")
+        
+        headerView?.setupSegmentedControl(postsCount: totalNumberOfPost, wishlistCount: 0, followersCount: numberOfFollowers)
             
         tableView.reloadData()
+        
+        TRUser.sharedInstance.setupPostsAndFollowers(totalNumberOfPost: totalNumberOfPost, numberOfFollowers: numberOfFollowers)
+    }
+    
+    func extractValue(value: JSON, key: String) -> Int {
+        
+        if value[key].type != SwiftyJSON.Type.null {
+            
+            return value[key].int!
+            
+        } else {
+            
+            return 0
+        }
     }
     
     override func callAPI() {
         
-        let userService = service as! TRUserService
+        let userService = service as! TRProfileService
         
         userService.otherProfileAPI(id: TRUser.sharedInstance.id!, success: {
             
@@ -57,6 +68,25 @@ class TRProfileViewController: LoaderViewController, UITableViewDataSource, UITa
             }, failure: {
                 
             
+        })
+    }
+    
+    func editProfileAPI() {
+        
+        let userService = service as! TRProfileService
+        
+        let fullName: String = headerView!.fullNameField.text!
+        let description: String = headerView!.descriptionField.text!
+        
+        let totalNumberOfPost: Int = TRUser.sharedInstance.totalNumberOfPost!
+        let numberOfFollowers: Int = TRUser.sharedInstance.numberOfFollowers!
+        
+        userService.editProfileAPI(id: TRUser.sharedInstance.id!, fullName: fullName, description: description, totalNumberOfPost: totalNumberOfPost, numberOfFollowers: numberOfFollowers, success: {
+            
+            
+            }, failure: {
+                
+                
         })
     }
     
@@ -68,31 +98,13 @@ class TRProfileViewController: LoaderViewController, UITableViewDataSource, UITa
         tableView.dataSource = self
         tableView.delegate = self
         
+        headerView = Bundle.main.loadNibNamed("TRProfileHeaderView", owner: self, options: nil)?.first as? TRProfileHeaderView
+        
+        headerView?.delegate = self
+        
+        tableView.tableHeaderView = headerView
+        
         tableView.register(UINib(nibName: String(describing: TRTravelCardCell.self), bundle: Bundle.main), forCellReuseIdentifier: String(describing: TRTravelCardCell.self))
-    }
-    
-    /**
-     * Segmented control setup
-     */
-    func setupSegmentedControl(postsCount: Int, wishlistCount: Int, followersCount: Int) {
-        
-        let attr = [ NSFontAttributeName : SNACKBAR_FONT_BOLD, NSKernAttributeName : KERNING_FONT, NSForegroundColorAttributeName : UIColor.black ] as [String : Any]
-        
-        /**
-         * UI setup for segmented control
-         */
-        segmentedControl.backgroundColor = LIGHT_SECONDARY_COLOR
-        segmentedControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocation.down
-        segmentedControl.contentVerticalAlignment = UIControlContentVerticalAlignment.bottom
-        
-        segmentedControl.titleTextAttributes = attr
-        segmentedControl.selectedTitleTextAttributes = attr
-        
-        segmentedControl.selectionIndicatorColor = UIColor.clear
-        segmentedControl.selectionIndicatorHeight = 2.0
-        segmentedControl.selectedSegmentIndex = 0
-        
-        segmentedControl.sectionTitles = ["POSTS\n\n\(postsCount)", "WISHLIST\n\n0", "FOLLOWERS\n\n\(followersCount)"]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -107,10 +119,15 @@ class TRProfileViewController: LoaderViewController, UITableViewDataSource, UITa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell: TRTravelCardCell = tableView .dequeueReusableCell(withIdentifier: String(describing: TRTravelCardCell.self)) as! TRTravelCardCell
+        let cell: TRTravelCardCell = tableView.dequeueReusableCell(withIdentifier: String(describing: TRTravelCardCell.self)) as! TRTravelCardCell
         
         cell.setupCell(travellingPost: travellingPostsArray[indexPath.row])
         
         return cell
+    }
+    
+    @IBAction func createPostButtonTapped(_ sender: AnyObject) {
+        
+        performSegue(withIdentifier: kProfileToCreatePostSegue, sender: self)
     }
 }

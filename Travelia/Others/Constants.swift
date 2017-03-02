@@ -20,6 +20,8 @@ let kSplashToProfileSegue = "kSplashToProfileSegue"
 let kLoginToProfileSegue = "kLoginToProfileSegue"
 let kSignUpToProfileSegue = "kSignUpToProfileSegue"
 
+let kProfileToCreatePostSegue = "kProfileToCreatePostSegue"
+
 let btRomanFont = UIFont(name: "Humanst521 BT", size: 14.0)
 
 let roundedViewsCornerRadius: CGFloat = 20.0

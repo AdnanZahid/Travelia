@@ -10,7 +10,7 @@ import SwiftyJSON
 
 class TRTravellingPost {
     
-    let userId: Int?
+    let fullName: String?
     let description: String?
     let travelingStatus: String?
     
@@ -19,12 +19,12 @@ class TRTravellingPost {
     let travelingTo: String?
     let travelingFrom: String?
     
-//    let travelingToCoordinates: Coordinates?
-//    let travelingFromCoordinates: Coordinates?
+    let travelingToCoordinates: Coordinates?
+    let travelingFromCoordinates: Coordinates?
     
     init(value: JSON) {
         
-        self.userId = value["userId"].int
+        self.fullName = value["userProfileName"].string
         self.description = value["description"].string
         self.travelingStatus = value["travelingStatus"].string
         
@@ -33,8 +33,8 @@ class TRTravellingPost {
         self.travelingTo = value["travelingTo"].string
         self.travelingFrom = value["travelingFrom"].string
         
-//        self.travelingToCoordinates =
-//        self.travelingFromCoordinates =
+        self.travelingToCoordinates = Coordinates(latitude: value["travelingToLatitude"].double!, longitude: value["travelingToLongitude"].double!)
+        self.travelingFromCoordinates = Coordinates(latitude: value["travelingFromLatitude"].double!, longitude: value["travelingFromLongitude"].double!)
     }
     
     static func getTravellingPosts(value: JSON) -> [TRTravellingPost] {

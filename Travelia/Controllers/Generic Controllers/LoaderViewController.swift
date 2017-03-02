@@ -10,6 +10,8 @@ import UIKit
 
 class LoaderViewController: APIViewController {
     
+    var isFirstTime: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,7 +20,12 @@ class LoaderViewController: APIViewController {
     
     override func makeRequest() {
         
-        view.isHidden = true
+        if isFirstTime == true {
+            
+            isFirstTime = false
+            
+            view.isHidden = true
+        }
     }
     
     override func success() {

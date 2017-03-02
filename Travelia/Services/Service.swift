@@ -9,7 +9,7 @@
 import PKHUD
 import SwiftyJSON
 
-protocol ServiceDelegate {
+protocol ServiceDelegate: class {
     
     func makeRequest()
     
@@ -22,7 +22,7 @@ protocol ServiceDelegate {
 
 class Service {
     
-    var delegate: ServiceDelegate?
+    weak var delegate: ServiceDelegate?
     
     func makeRequest() {
         

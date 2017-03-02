@@ -19,4 +19,5 @@ target 'Travelia' do
     pod 'HMSegmentedControl'
     pod 'GoogleMaps'
     pod 'GooglePlaces'
+    pod 'IQKeyboardManagerSwift'
 end

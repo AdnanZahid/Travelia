@@ -19,6 +19,10 @@
 		843C62C31E5D65D9009AD12B /* TRUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C62C21E5D65D9009AD12B /* TRUserData.swift */; };
 		848483DE1E49F89900A63524 /* TRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848483DD1E49F89900A63524 /* TRHomeViewController.swift */; };
 		848483E01E49F8B200A63524 /* TRProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848483DF1E49F8B200A63524 /* TRProfileViewController.swift */; };
+		84A5307C1E5EA013000288F7 /* TRProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5307B1E5EA013000288F7 /* TRProfileService.swift */; };
+		84D5CBD71E669F300031B87C /* TRCreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5CBD61E669F300031B87C /* TRCreatePostViewController.swift */; };
+		84EC78CF1E674C6B0015FE3D /* TRProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC78CE1E674C6B0015FE3D /* TRProfileHeaderView.swift */; };
+		84EC78D11E674C850015FE3D /* TRProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EC78D01E674C850015FE3D /* TRProfileHeaderView.xib */; };
 		84F005871E571A4B0024254A /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F005861E571A4B0024254A /* LoaderViewController.swift */; };
 		84F005891E571B4C0024254A /* APIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F005881E571B4C0024254A /* APIViewController.swift */; };
 		84F0058D1E571BD50024254A /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F0058C1E571BD50024254A /* Service.swift */; };
@@ -72,6 +76,10 @@
 		843C62C21E5D65D9009AD12B /* TRUserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TRUserData.swift; path = Storage/TRUserData.swift; sourceTree = "<group>"; };
 		848483DD1E49F89900A63524 /* TRHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TRHomeViewController.swift; path = Controllers/TRHomeViewController.swift; sourceTree = "<group>"; };
 		848483DF1E49F8B200A63524 /* TRProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TRProfileViewController.swift; path = Controllers/TRProfileViewController.swift; sourceTree = "<group>"; };
+		84A5307B1E5EA013000288F7 /* TRProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TRProfileService.swift; path = Services/TRProfileService.swift; sourceTree = "<group>"; };
+		84D5CBD61E669F300031B87C /* TRCreatePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TRCreatePostViewController.swift; path = Controllers/TRCreatePostViewController.swift; sourceTree = "<group>"; };
+		84EC78CE1E674C6B0015FE3D /* TRProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TRProfileHeaderView.swift; path = Views/TRProfileHeaderView.swift; sourceTree = "<group>"; };
+		84EC78D01E674C850015FE3D /* TRProfileHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TRProfileHeaderView.xib; path = Views/TRProfileHeaderView.xib; sourceTree = "<group>"; };
 		84F005861E571A4B0024254A /* LoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoaderViewController.swift; path = "Controllers/Generic Controllers/LoaderViewController.swift"; sourceTree = "<group>"; };
 		84F005881E571B4C0024254A /* APIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIViewController.swift; path = "Controllers/Generic Controllers/APIViewController.swift"; sourceTree = "<group>"; };
 		84F0058C1E571BD50024254A /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Services/Service.swift; sourceTree = "<group>"; };
@@ -165,8 +173,10 @@
 		8421BEFC1E3877FB0089300F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				84F7DAE21E55A32800D6CFD3 /* Cells */,
 				8421BEFD1E3878200089300F /* AlertView.swift */,
+				84F7DAE21E55A32800D6CFD3 /* Cells */,
+				84EC78CE1E674C6B0015FE3D /* TRProfileHeaderView.swift */,
+				84EC78D01E674C850015FE3D /* TRProfileHeaderView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -256,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				84F005851E571A170024254A /* Generic Controllers */,
+				84D5CBD61E669F300031B87C /* TRCreatePostViewController.swift */,
 				848483DD1E49F89900A63524 /* TRHomeViewController.swift */,
 				84F592CE1E3786B300F0C6FA /* TRLoginViewController.swift */,
 				848483DF1E49F8B200A63524 /* TRProfileViewController.swift */,
@@ -299,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				84F0058C1E571BD50024254A /* Service.swift */,
+				84A5307B1E5EA013000288F7 /* TRProfileService.swift */,
 				84F592EC1E3787EA00F0C6FA /* TRUserService.swift */,
 			);
 			name = Services;
@@ -433,6 +445,7 @@
 				84F592E31E3786C300F0C6FA /* LaunchScreen.storyboard in Resources */,
 				84F592E21E3786C300F0C6FA /* Assets.xcassets in Resources */,
 				841A41CD1E2CB46500A11E48 /* bt-roman.ttf in Resources */,
+				84EC78D11E674C850015FE3D /* TRProfileHeaderView.xib in Resources */,
 				84F592E61E3786C300F0C6FA /* Info.plist in Resources */,
 				84F592E41E3786C300F0C6FA /* Main.storyboard in Resources */,
 				841403E41E421DA4008C380D /* GoogleService-Info.plist in Resources */,
@@ -531,6 +544,7 @@
 				84F592E71E3786C300F0C6FA /* Travelia.xcdatamodeld in Sources */,
 				8411003F1E5AFA91001D5B9B /* Coordinates.swift in Sources */,
 				8421BF031E38B99D0089300F /* TRValidationHandler.swift in Sources */,
+				84A5307C1E5EA013000288F7 /* TRProfileService.swift in Sources */,
 				8421BEFE1E3878200089300F /* AlertView.swift in Sources */,
 				848483DE1E49F89900A63524 /* TRHomeViewController.swift in Sources */,
 				84F592ED1E3787EA00F0C6FA /* TRUserService.swift in Sources */,
@@ -542,7 +556,9 @@
 				84F592EF1E3787F800F0C6FA /* TRUser.swift in Sources */,
 				8421BEFB1E3871E30089300F /* Extensions.swift in Sources */,
 				84F0058D1E571BD50024254A /* Service.swift in Sources */,
+				84EC78CF1E674C6B0015FE3D /* TRProfileHeaderView.swift in Sources */,
 				848483E01E49F8B200A63524 /* TRProfileViewController.swift in Sources */,
+				84D5CBD71E669F300031B87C /* TRCreatePostViewController.swift in Sources */,
 				84F592D21E3786B300F0C6FA /* TRSignUpViewController.swift in Sources */,
 				843C62C31E5D65D9009AD12B /* TRUserData.swift in Sources */,
 			);

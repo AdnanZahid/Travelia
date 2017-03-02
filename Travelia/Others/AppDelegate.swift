@@ -14,6 +14,7 @@ import Fabric
 import TwitterKit
 import GoogleSignIn
 import GoogleMaps
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -42,6 +43,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
          * Setup Google Maps
          */
         setupGoogleMaps()
+        
+        /**
+         * Scroll text fields up to make room for keyboard
+         */
+        IQKeyboardManager.sharedManager().enable = true
         
         return true
     }

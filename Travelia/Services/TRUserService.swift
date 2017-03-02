@@ -75,9 +75,9 @@ class TRUserService: Service {
                 if self.isError(value: json) == false {
                     
                     let data = json["UserDto"]
-                
-                    if let id = Int(data["id"].string!) {
                     
+                    if let id = Int(data["id"].string!) {
+                        
                         self.setCurrentUser(id: id, userName: userName, userEmail: userEmail)
                         
                         self.success()
@@ -88,40 +88,6 @@ class TRUserService: Service {
                         self.failure()
                         failure()
                     }
-                } else {
-                    
-                    self.failure()
-                    failure()
-                }
-            } else {
-                
-                self.failure()
-                failure()
-            }
-        }
-    }
-    
-    func otherProfileAPI(id: Int, success: @escaping () -> (), failure: @escaping () -> ()) {
-        
-        let URL = "\(baseURL)/user/showprofile?requestorId=3&requestedId=\(id)"
-        
-        makeRequest()
-        
-        Alamofire.request(URL).validate().responseJSON { (responseData) -> Void in
-            
-            if let value = responseData.result.value {
-                
-                let json = JSON(value)
-                
-                if self.isError(value: json) == false {
-                    
-                    let data = json["UserProfileDto"]
-            
-                    self.populateData(value: data)
-                    
-                    self.success()
-                    success()
-                    
                 } else {
                     
                     self.failure()
